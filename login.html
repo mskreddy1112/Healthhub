@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Health hub Login</title>
+   <link rel="stylesheet" href="/WEBATHON/logincss.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+   <style>
+        .a{
+            text-align: center;
+        }
+       .container {
+        border: 2px solid black;
+        margin: 170px auto 10px auto;
+        padding: 20px 19px;
+        width: 50%;
+        color:#0E8388;
+       }
+       .container2{
+        border: 2px solid black;
+        margin: 10px auto;
+        padding: 20px 19px;
+        width: 50%;
+        color:#0E8388;
+       }
+       .form-group input{
+           text-align: center;
+           display: block;
+           width: 70%;
+           padding: 7px;
+           border: 2px solid black;
+           margin: 3px auto;
+           border-radius: 10px;
+           font-family: 'Lilita One', cursive;
+           color: gray;
+       }
+       .container h1{
+           text-align: center;
+       }
+       .container button{
+           display: block;
+           width: 20%;
+           margin: 10px auto;
+           
+       }
+       .form-group label{
+           font-size:23px;
+       }
+   </style>
+</head>
+<body>
+   <header class="header">
+       <!-- left box for logo -->
+       <div class="left">
+           <img src="/WEBATHON/logo1.jpg" alt="">
+           <div>Health Hub</div>
+       </div>
+       <!-- right box for buttons -->
+       <div class="right">
+           <a href="/WEBATHON/contactus.html" class="h">Contact</a>
+       </div>
+   </header>
+   <div class="container">
+       <h1>HEALTH-HUB LOGIN</h1>
+       <form action="noaction.php">
+           <div class="form-group">
+               <label for="email">Email : </label>
+               <input type="text" name="" id="email" placeholder="Enter your email">
+           </div>
+           <div class="form-group">
+               <label for="password">Password : </label>
+               <input type="password" name="" placeholder="Enter your password" id="password">
+           </div>
+           <a class="h" href="/WEBATHON/homepage.html">Log in</a>
+       </form>
+   </div>
+   <div class="container2">
+        <div class="a">
+            Don't have an account? Sign in as <a class="h" href="/WEBATHON/patient.html">Patient</a><a class="h" href="/WEBATHON/doctor.html">Doctor</a>
+        </div>
+   </div>
+</body>
+</html>

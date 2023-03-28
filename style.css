@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 25%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.nav-list{  
+    width: 70%;
+    /* background-color:black ; */
+    display: flex;
+    align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+    padding:26px 30px;
+    flex-direction: column;
+    
+}
+.nav-list li a{ 
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+.nav-list li a:hover{ 
+    color: gray;
+}
+.rightnav{
+    /* background-color: aqua; */
+    width: 30%;
+    text-align: right; 
+    padding: 0 23px;
+}
+
+#search{
+    padding:5px 15px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 75px;
+}
+.background{
+    /* background:rgba(0, 0, 0, 0.7) url('/WEBATHON/back.jpg'); */
+    background-color: #94AF9F;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 50%;
+    height: 70%;
+
+}
+
+
+.firstsection{
+    height: 100vh;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondHalf{
+    width: 30%;
+    margin-left: 55px;
+}
+
+.text-big {
+    font-size: 40px;
+    
+}
+.text-small {
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 18px;
+    background:none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+    
+}
+.btn:hover{
+    background:white;
+    color:black;
+}
+
+.secRight{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 500px;
+    max-width:80%;
+    margin: auto;    
+}
+.thumbnail img{
+    width: 250px;
+        width: 70%;
+        border: 4px solid black;
+        border-radius: 150px;
+        display: block;
+        margin: auto;
+}
+
+.contact{
+    background-color:#DBE4C6;
+    height: 34vh;
+}
+.textcenter{
+    text-align: center;
+}
+
+.form{
+    margin: auto;
+    max-width:300px;
+    
+}
+.form input{
+    margin: 25px 0;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius:5px;
+}
+.text-footer{
+    text-align: center;
+    padding :20px 0;
+    color: black;
+    
+}
+
+.burger{
+    display:none ;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    margin:5px 3px;
+    height: 4px;
+    background-color:white;
+    width: 33px;
+}
+
+@media only screen and (max-width : 1234px) {
+    .nav-list{
+        flex-direction: column;
+    }    
+    .navbar{
+        flex-direction: column;
+        height: 460px;
+        transition: all 1s ease-in-out;
+    }
+    
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
+.firstsection{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.slide{
+    width:20%;
+    transition: 2s;
+}
+.slide img{
+    width:800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position:absolute;
+    width: 800px;
+    display: flex;
+    margin-top: -40px;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right:40px;
+}
+.carousel-inner {
+    height:400px;
+    margin-bottom: 30px;
+  }
+
+.sectionSubTag{
+    font-size:20px;
+}
